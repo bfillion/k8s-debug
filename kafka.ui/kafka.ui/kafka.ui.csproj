@@ -10,4 +10,28 @@
   <ItemGroup>
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.2.2" />
+    <PackageReference Include="Confluent.SchemaRegistry.Serdes" Version="1.2.2" />
+    <PackageReference Include="Confluent.Kafka.Avro" Version="0.11.6" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI" Version="3.0.4" />
+    <PackageReference Include="AspNetCore.HealthChecks.Kafka" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="healthchecksdb" />
+    <None Remove="healthchecksdb" />
+    <None Remove="healthchecksdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Resources\Views\Home\Privacy.fr.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Resources\Views\Home\Privacy.fr.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
 </Project>
